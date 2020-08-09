@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.FavoritesFragment">
+
+
+    <TextView
+        android:id="@+id/txtFav"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerFavRestaurant"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:layout_below="@id/txtFav"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rlNoFav"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imgFavorite"
+            android:layout_width="200.0dp"
+            android:layout_height="200.0dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_favorites" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgFavorite"
+            android:layout_centerHorizontal="true"
+            android:padding="10.0dip"
+            android:text="@string/no_favorite_restaurants"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceMedium" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/progressLayout" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

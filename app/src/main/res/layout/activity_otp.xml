@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.OtpActivity"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/scooter"
+        android:padding="6dp"/>
+
+
+    <TextView
+        android:id="@+id/txtCompanyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:layout_centerHorizontal="true"
+        android:text="@string/food_runner"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtOtpHeader"
+        android:layout_below="@+id/txtCompanyName"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="25dp"
+        android:text="@string/otp_received"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtOtpHeader"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="25dp"
+        android:drawableLeft="@drawable/ic_phone"
+        android:drawablePadding="5dp"
+        android:hint="@string/enter_otp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:maxLength="4"
+        android:maxLines="1"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/etNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etOtp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="25dp"
+        android:hint="@string/enter_new_password"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="5dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:maxLines="1"
+        android:inputType="numberPassword"
+        />
+
+    <EditText
+        android:id="@+id/etConfirmNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etNewPassword"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="25dp"
+        android:hint="@string/enter_new_password_again"
+        android:drawableLeft="@drawable/ic_confirm_pass"
+        android:drawablePadding="5dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:maxLines="1"
+        android:inputType="numberPassword"
+        />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginHorizontal="25dp"
+        android:layout_below="@+id/etConfirmNewPassword"
+        android:text="@string/submit"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/progressLayout" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
