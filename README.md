@@ -19,7 +19,7 @@ User Profile: Shows user's name, phone number, and address.
 - Cart: Lists items added to the cart and displays the total amount to be paid.
 
 ## Screenshots
-(Include relevant screenshots of your app)
+
 
 ## Installation
 
