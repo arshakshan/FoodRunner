@@ -23,6 +23,10 @@ User Profile: Shows user's name, phone number, and address.
 
 ## Installation
 
+Install the Apk for Android Phones using the apk provided here:
+
+[Apk](/app/release/FoodRunner.apk)
+
 Clone the repository:
 ```bash
 git clone https://github.com/your-username/food-delivery-app.git
